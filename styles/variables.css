@@ -1,0 +1,51 @@
+:root {
+  --primary: #00A4FF;
+  --primary-dark: #0094E6;
+  --primary-darkest: #0083CC;
+
+  --secondary: #00195C;
+  --secondary-dark: #001243;
+  --secondary-darkest: #000B29;
+
+  --dark: #262626;
+  --dark-dark: #191919;
+  --dark-darkest: #0C0C0C;
+
+  --light: #FFFFFF;
+  --light-dark: #F2F2F2;
+  --light-darkest: #E5E5E5;
+
+  --warning: #F9971E;
+  --information: #0172CB;
+  --success: #28A138;
+  --error: #D21C1C;
+}
+
+html {
+  color: var(--light);
+}
+
+.h1 {
+  font-size: 2.441rem;
+  line-height: 58.6px;
+}
+
+.h2 {
+  font-size: 1.953rem;
+  line-height: 46.96px;
+}
+
+.h3 {
+  font-size: 1.563rem;
+  line-height: 37.5px;
+}
+
+.h4 {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.p {
+  font-size: 1rem;
+  line-height: 24px;
+}

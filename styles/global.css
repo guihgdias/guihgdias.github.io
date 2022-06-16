@@ -1,0 +1,45 @@
+body {
+  background: var(--dark-dark);
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark-darkest);
+  color: var(--light);
+  padding: 20px 64px;
+}
+
+.main-header .logo {
+  width: 35px;
+  height: 40px;
+}
+
+.main-header .menu ul li {
+  float: left;
+  text-transform: uppercase;
+  margin: 0 16px;
+  cursor: pointer;
+  transition: all 150ms linear;
+}
+.main-header .menu ul li:hover {
+  color: var(--primary);
+}
+.main-header .menu ul li.active {
+  color: var(--primary);
+}
+
+.changeTheme {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.emphasis {
+  color: var(--primary);
+}
+
+.rightSide img {
+  margin-left: 122px;
+}

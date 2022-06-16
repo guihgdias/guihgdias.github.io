@@ -1,0 +1,16 @@
+.main-button {
+  text-transform: uppercase;
+  color: var(--light);
+  background: var(--primary-darkest);
+  padding: 12px;
+  display: block;
+  width: 363px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 150ms linear;
+  margin-top: 56px;
+}
+
+.main-button:hover {
+  background: var(--primary);
+}
