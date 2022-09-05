@@ -3,11 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
+}
+
+.section-header .text_big {
+  line-height: 38px;
+  margin-bottom: 6px;
 }
 
 .section-header:after {
   content: '';
-  width: 461px;
+  width: 450px;
   height: 5px;
   display: block;
   background: var(--primary);

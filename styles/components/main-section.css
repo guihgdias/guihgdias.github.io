@@ -1,0 +1,15 @@
+.main-section {
+  width: 100%;
+  padding: 120px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section.-space_between {
+  justify-content: space-between;
+}
+
+.main-section:nth-child(odd) {
+  background: #1f262f;
+}

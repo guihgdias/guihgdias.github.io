@@ -1,0 +1,7 @@
+#hero {
+  padding-top: calc(120px + 80px);
+}
+
+#hero .left .text_big {
+  text-transform: uppercase;
+}

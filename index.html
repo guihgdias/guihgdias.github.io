@@ -1,74 +1,210 @@
 <html>
   <head>
     <title>Guilherme Henrique</title>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/x-icon" href="assets/images/Logo.png">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/main-section.css" >
-    <link rel="stylesheet" href="styles/main-button.css">
-    <link rel="stylesheet" href="styles/section-header.css">
-
-    <link rel="stylesheet" href="styles/components/content-wrapper.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Sections-->
+    <link rel="stylesheet" href="styles/hero.css">
+    <!--Components-->
+    <link rel="stylesheet" href="styles/components/page-header.css">
+    <link rel="stylesheet" href="styles/components/personal-logo.css">
+    <link rel="stylesheet" href="styles/components/navigation-menu.css">
+    <link rel="stylesheet" href="styles/components/change-theme.css">
+    <link rel="stylesheet" href="styles/components/main-section.css">
+    <link rel="stylesheet" href="styles/components/main-button.css">
+    <link rel="stylesheet" href="styles/components/draggable-slider.css">
+    <link rel="stylesheet" href="styles/components/content-wrapper.css">
+    <link rel="stylesheet" href="styles/components/tiny-card.css">
+    <link rel="stylesheet" href="styles/components/wide-card.css">
+    <link rel="stylesheet" href="styles/components/project-card.css">
+    <link rel="stylesheet" href="styles/components/section-header.css">
   </head>
   <body>
-    <header class="main-header">
-      <img src="assets/images/Logo.png" alt="G Logo" loading="lazy" class="logo">
-      <nav class="menu">
-        <ul>
-          <li class="h4 active">Home</li>
-          <li class="h4">Sobre Mim</li>
-          <li class="h4">Conhecimentos</li>
-          <li class="h4">Serviços</li>
-          <li class="h4">Projetos</li>
-          <li class="h4">Contato</li>
-        </ul>
+    <!--Models to clone in JS-->
+    <div class="models">
+      <div class="tiny-card" data-aos="zoom-out" data-aos-delay="450">
+        <img class="card_icon" src="assets/no-image-icon.png">
+        <p class="card_name p">Nome</p>
+      </div>
+      
+      <a class="project-card" href="https://guihgdias.github.io/facilitatask-teste/" target="_blank" data-aos="flip-up" data-aos-delay="150">
+        <div class="preview">
+          <img src="assets/images/Projects/Facilita-Task.png">
+        </div>
+        <div class="content_area">
+          <p class="text_medium">Facilita Task</p>
+          <p class="text_tiny">Um simples aplicativo de tarefas, com persistência de dados no local storage.</p>
+          <div class="used_tecs">
+            <p class="tecs p">HTML, CSS e JS Vanilla</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!---->
+    <header class="page-header">
+      <div class="personal-logo -little">
+        <img src="assets/images/Logo.png" alt="Logo" loading="lazy" class="logo">
+      </div>
+      <nav class="navigation-menu text_small">
+        <a href="#hero" class="active">Home</a>
+        <a href="#about">Sobre Mim</a>
+        <a href="#knowledges">Conhecimentos</a>
+        <a href="#services">Serviços</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
       </nav>
-      <img src="assets/icons/Light Mode.png" alt="Light Mode" loading="lazy" class="changeTheme">
+      <div class="change-theme">
+        <img src="assets/icons/Light Mode.svg" alt="Light Mode" loading="lazy">
+        <img src="assets/icons/Light Mode Hover.svg" alt="Light Mode Hover" loading="lazy" class="hover">
+      </div>
     </header>
-
     <main>
-      <section id="welcome" class="main-section">
-        <div class="leftSide">
-          <p class="h4">
-            Olá, seja muito <span class="emphasis h4">bem vindo(a)</span> ✋🤠
-            <br>
-            Eu me chamo 
-          </p>
-          <h1 class="h1">
-            GUILHERME HENRIQUE
-          </h1>
-          <p class="h4">
-            Sou <span class="emphasis h4">desenvolvedor web</span> e <span class="emphasis h4">UI/UX designer</span>
-            <br>
-            Conheça um pouco sobre mim 🤗
-          </p>
-          <a class="main-button p">Sobre Mim</a>
-        </div>
-        <div class="rightSide">
-          <img src="assets/images/Hello Men.png" alt="Welcome Image">
-        </div>
-      </section>
-
-      <section class="main-section dark">
-        <header class="section-header">
-          <small class="p">Conheça um pouco</small>
-          <h2 class="h1">SOBRE MIM</h2>
-        </header>
-        <div class="content-wrapper">
-          
+      <section id="hero" class="main-section">
+        <div class="container content-wrapper -space_between">
+          <div class="left">
+            <p class="text_small" data-aos="fade-right" data-aos-delay="150">
+              Olá, seja muito <span class="emphasis text_small">bem vindo(a)</span> ✋🤠<br>Eu me chamo 
+            </p>
+            <h1 class="text_big" data-aos="fade-right" data-aos-delay="300">
+              Guilherme Henrique
+            </h1>
+            <p class="text_small" data-aos="fade-right" data-aos-delay="450">
+              Sou <span class="emphasis text_small">desenvolvedor web</span> e <span class="emphasis text_small">UI/UX designer</span>
+              <br>
+              Conheça um pouco sobre mim 🤗
+            </p>
+            <div data-aos="fade-right" data-aos-delay="600">
+              <a class="main-button text_tiny" href="#about" >Sobre Mim</a>
+            </div>
+          </div>
+          <div class="right">
+              <img src="assets/images/Hello Men.png" alt="Welcome Image" data-aos="fade-left" data-aos-delay="150">
+          </div>
         </div>
       </section>
-
+      <section id="about" class="main-section">
+        <div class="container content-wrapper -column">
+          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+            <small class="text_small">Conheça um pouco</small>
+            <h2 class="text_big">SOBRE MIM</h2>
+          </header>
+          <div class="content-wrapper -center_center">
+            <div class="left">
+              <p class="text_small" data-aos="fade-right" data-aos-delay="300">
+                Olá, meu nome é Guilherme, tenho 22 anos e moro em Goiânia - GO, sou estudante de UI/UX designer e web developer.</br>
+                Estudo programação desde 2018 e procuro uma oportunidade na área.</br>
+                Gosto de criar interfaces e transformalas em aplicações reais, conheça mais um pouco sobre mim logo abaixo.
+              </p>
+              <div data-aos="fade-right" data-aos-delay="450">
+                <a class="main-button text_tiny" href="archives/guilherme-henrique.pdf" download >DOWNLOAD CV</a>
+              </div>
+            </div>
+            <div class="right">
+              <img src="assets/images/Cell Men.png" alt="Men with giant phone image" data-aos="fade-left" data-aos-delay="300">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="knowledges" class="main-section">
+        <div class="container content-wrapper -column">
+          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+            <small class="text_small">Aqui estão meus</small>
+            <h2 class="text_big">CONHECIMENTOS</h2>
+          </header>
+          <div class="content-wrapper -column">
+            <div class="tecs">
+              <h3 class="text_large" data-aos="zoom-out" data-aos-delay="300">Tecnologias</h3>
+              <div class="draggable-slider">
+                <div class="area">
+                  <div class="slider">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tools">
+              <h3 class="text_large" data-aos="zoom-out" data-aos-delay="300">Ferramentas</h3>
+              <div class="draggable-slider">
+                <div class="area">
+                  <div class="slider">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="main-section">
+        <div class="container content-wrapper -column">
+          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+            <small class="text_small">Esses são</small>
+            <h2 class="text_big">MEUS SERVIÇOS</h2>
+          </header>
+          <div class="content-wrapper -column">
+            <div class="wide-card" data-aos="fade-left" data-aos-delay="300">
+              <img class="icon" src="assets/icons/palette.png">
+              <p class="text_medium">Criação de interfaces</p>
+            </div>
+            <div class="wide-card" data-aos="fade-left" data-aos-delay="450">
+              <img class="icon" src="assets/icons/monitor.png">
+              <p class="text_medium">Criação de sites</p>
+            </div>
+            <div class="wide-card" data-aos="fade-left" data-aos-delay="600">
+              <img class="icon" src="assets/icons/phone.png">
+              <p class="text_medium">Responsividade</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="main-section">
+        <div class="container content-wrapper -column">
+          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+            <small class="text_small">Meus melhores</small>
+            <h2 class="text_big">PROJETOS</h2>
+          </header>
+          <div class="cards content-wrapper -gap">
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="main-section">
+        <div class="container content-wrapper -column">
+          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+            <small class="text_small">Meios de</small>
+            <h2 class="text_big">CONTATO</h2>
+          </header>
+          <div class="content-content-wrapper column">
+            <div class="contact-area">
+              <div class="contact-info" data-aos="fade-left" data-aos-delay="150">
+                <img class="icon" src="assets/icons/email.png">
+                <p class="contact text_small">guihgdias@gmail.com</p>
+              </div>
+              <div class="contact-info" data-aos="fade-right" data-aos-delay="300">
+                <img class="icon" src="assets/icons/tellphone.png">
+                <p class="contact text_small">+55 (62) 9 8629-2640</p>
+              </div>
+              <div class="contact-info" data-aos="fade-left" data-aos-delay="450">
+                <img class="icon" src="assets/icons/peoples.png">
+                <p class="contact text_small">@guihgdias</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer></footer>
+    <footer id="main-footer" class="text_small">
+      Criado por: <a href="https://www.instagram.com/guihgdias/" class="text_small" target="_blank">@Guilherme</a>
+    </footer>
+    <script src="scripts/list.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>

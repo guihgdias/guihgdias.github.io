@@ -1,5 +1,20 @@
 .content-wrapper {
   display: flex;
-  justify-items: center;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+}
+.content-wrapper.-column {
+  flex-direction: column;
+}
+.content-wrapper.-space_between {
+  justify-content: space-between;
+}
+.content-wrapper.-center_center {
+  justify-content: center;
+  align-items: center;
+}
+.content-wrapper.-gap {
+  gap: 8px;
 }

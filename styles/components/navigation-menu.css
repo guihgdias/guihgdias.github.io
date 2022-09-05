@@ -1,0 +1,17 @@
+.navigation-menu {
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  gap: 32px;
+}
+.navigation-menu a {
+  font-size: inherit;
+  line-height: inherit;
+  transition: all 150ms linear;
+}
+.navigation-menu a:hover {
+  color: var(--primary);
+}
+.navigation-menu a.active {
+  color: var(--primary);
+}

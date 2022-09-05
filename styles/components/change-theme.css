@@ -1,0 +1,17 @@
+.change-theme {
+  position: relative;
+}
+
+.change-theme .hover {
+  cursor: pointer;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 150ms linear;
+}
+
+.change-theme:hover .hover {
+  opacity: 1;
+}

@@ -1,0 +1,14 @@
+.draggable-slider .area {
+  width: 758px;
+  height: 126px;
+  overflow: hidden;
+}
+
+.draggable-slider .area .slider {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  gap: 8px;
+  pointer-events: none;
+  user-select: none;
+}

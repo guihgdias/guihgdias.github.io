@@ -1,0 +1,12 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #080d10db;
+  backdrop-filter: blur(10px);
+  color: var(--light);
+  padding: 20px 64px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}

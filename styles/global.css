@@ -1,45 +1,67 @@
 body {
-  background: var(--dark-dark);
-}
-
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: var(--dark-darkest);
-  color: var(--light);
-  padding: 20px 64px;
 }
 
-.main-header .logo {
-  width: 35px;
-  height: 40px;
-}
-
-.main-header .menu ul li {
-  float: left;
-  text-transform: uppercase;
-  margin: 0 16px;
-  cursor: pointer;
-  transition: all 150ms linear;
-}
-.main-header .menu ul li:hover {
-  color: var(--primary);
-}
-.main-header .menu ul li.active {
-  color: var(--primary);
-}
-
-.changeTheme {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+.container {
+  max-width: 758px;
+  margin: auto;
+  width: 100%;
 }
 
 .emphasis {
   color: var(--primary);
 }
 
-.rightSide img {
-  margin-left: 122px;
+#about .container > .content-wrapper > .left {
+  max-width: 363px;
+  margin-right: 67px;
+}
+
+#knowledges .text_large {
+  margin-bottom: 6px;
+}
+#knowledges .tecs {
+  margin-bottom: 42px;
+}
+
+.contact-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info .icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+#main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--dark);
+}
+#main-footer a {
+  color: var(--primary);
+  margin-left: 6px;
+}
+
+.dark-gradientSec {
+  background: #1f262f;
+}
+
+.models {
+  display: none;
+}
+
+#projects .content-content-wrapper {
+  gap: 8px;
 }
