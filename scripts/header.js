@@ -1,7 +1,13 @@
 let menuElements = document.querySelectorAll('.page-header  .navigation-menu a');
 let sections = document.querySelectorAll('section');
+let mobileMenu = document.querySelector('.mobile-menu');
+let navMenu = document.querySelector('.navigation-menu');
 
 window.addEventListener('scroll', () => {
+  navMenu.classList.remove('opened');
+  mobileMenu.classList.remove('opened');
+  document.body.style.overflow = 'visible'
+
   if(window.scrollY >= 0 && window.scrollY < sections[1].offsetTop - 200) {
     menuElements[0].classList.add('active');
     [1, 2, 3, 4, 5].map(x=>menuElements[x].classList.remove('active'));
@@ -22,3 +28,13 @@ window.addEventListener('scroll', () => {
       [0, 1, 2, 3, 4].map(x=>menuElements[x].classList.remove('active'));
   }
 });
+
+mobileMenu.addEventListener('click', ()=>{
+  mobileMenu.classList.toggle('opened');
+  navMenu.classList.toggle('opened');
+  if(navMenu.classList.contains('opened') == true) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'visible'
+  }
+})

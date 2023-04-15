@@ -4,7 +4,7 @@
   background: var(--primary);
   padding: 12px;
   display: block;
-  width: 363px;
+  max-width: 363px;
   text-align: center;
   border-radius: 5px;
   margin-top: 56px;

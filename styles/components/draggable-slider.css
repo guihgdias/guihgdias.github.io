@@ -1,13 +1,17 @@
 .draggable-slider .area {
-  width: 758px;
+  max-width: 758px;
+  width: 100%;
   height: 126px;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .draggable-slider .area .slider {
   height: 100%;
   width: fit-content;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   pointer-events: none;
   user-select: none;

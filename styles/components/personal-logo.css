@@ -1,6 +1,7 @@
 .personal-logo.-little {
   width: 35px;
   height: 40px;
+  z-index: 2;
 }
 
 .personal-logo .logo {

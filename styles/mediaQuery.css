@@ -1,0 +1,24 @@
+@media only screen and (max-width: 960px) {
+  .navigation-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #080d10;
+    padding-top: 20px;
+    transform: translateY(-100%);
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  #hero .right,
+  #about .right {
+    display: none;
+  }
+}

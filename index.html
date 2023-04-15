@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/mediaQuery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Sections-->
     <link rel="stylesheet" href="styles/hero.css">
     <!--Components-->
@@ -30,12 +30,12 @@
   <body>
     <!--Models to clone in JS-->
     <div class="models">
-      <div class="tiny-card" data-aos="zoom-out" data-aos-delay="450">
+      <div class="tiny-card">
         <img class="card_icon" src="assets/no-image-icon.png">
         <p class="card_name p">Nome</p>
       </div>
       
-      <a class="project-card" href="https://guihgdias.github.io/facilitatask-teste/" target="_blank" data-aos="flip-up" data-aos-delay="150">
+      <a class="project-card" href="https://guihgdias.github.io/facilitatask-teste/" target="_blank">
         <div class="preview">
           <img src="assets/images/Projects/Facilita-Task.png">
         </div>
@@ -65,63 +65,68 @@
         <img src="assets/icons/Light Mode.svg" alt="Light Mode" loading="lazy">
         <img src="assets/icons/Light Mode Hover.svg" alt="Light Mode Hover" loading="lazy" class="hover">
       </div>
+      <div class="mobile-menu">
+        <span class="dash"></span>
+        <span class="dash"></span>
+        <span class="dash"></span>
+      </div>
     </header>
     <main>
       <section id="hero" class="main-section">
         <div class="container content-wrapper -space_between">
           <div class="left">
-            <p class="text_small" data-aos="fade-right" data-aos-delay="150">
+            <p class="text_small">
               Olá, seja muito <span class="emphasis text_small">bem vindo(a)</span> ✋🤠<br>Eu me chamo 
             </p>
-            <h1 class="text_big" data-aos="fade-right" data-aos-delay="300">
+            <h1 class="text_big">
               Guilherme Henrique
             </h1>
-            <p class="text_small" data-aos="fade-right" data-aos-delay="450">
+            <p class="text_small">
               Sou <span class="emphasis text_small">desenvolvedor web</span> e <span class="emphasis text_small">UI/UX designer</span>
               <br>
               Conheça um pouco sobre mim 🤗
             </p>
-            <div data-aos="fade-right" data-aos-delay="600">
+            <div>
               <a class="main-button text_tiny" href="#about" >Sobre Mim</a>
             </div>
           </div>
           <div class="right">
-              <img src="assets/images/Hello Men.png" alt="Welcome Image" data-aos="fade-left" data-aos-delay="150">
+              <img src="assets/images/Hello Men.png" alt="Welcome Image">
           </div>
         </div>
       </section>
       <section id="about" class="main-section">
         <div class="container content-wrapper -column">
-          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+          <header class="section-header">
             <small class="text_small">Conheça um pouco</small>
             <h2 class="text_big">SOBRE MIM</h2>
           </header>
           <div class="content-wrapper -center_center">
             <div class="left">
-              <p class="text_small" data-aos="fade-right" data-aos-delay="300">
+              <p class="text_small">
                 Olá, meu nome é Guilherme, tenho 22 anos e moro em Goiânia - GO, sou estudante de UI/UX designer e web developer.</br>
                 Estudo programação desde 2018 e procuro uma oportunidade na área.</br>
                 Gosto de criar interfaces e transformalas em aplicações reais, conheça mais um pouco sobre mim logo abaixo.
               </p>
-              <div data-aos="fade-right" data-aos-delay="450">
+              <div>
                 <a class="main-button text_tiny" href="archives/guilherme-henrique.pdf" download >DOWNLOAD CV</a>
               </div>
             </div>
             <div class="right">
-              <img src="assets/images/Cell Men.png" alt="Men with giant phone image" data-aos="fade-left" data-aos-delay="300">
+              <img src="assets/images/Cell Men.png" alt="Men with giant phone image">
             </div>
           </div>
         </div>
       </section>
       <section id="knowledges" class="main-section">
         <div class="container content-wrapper -column">
-          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+          <header class="section-header">
             <small class="text_small">Aqui estão meus</small>
             <h2 class="text_big">CONHECIMENTOS</h2>
           </header>
           <div class="content-wrapper -column">
             <div class="tecs">
-              <h3 class="text_large" data-aos="zoom-out" data-aos-delay="300">Tecnologias</h3>
+              <h3 class="text_large">Tecnologias</h3>
               <div class="draggable-slider">
                 <div class="area">
                   <div class="slider">
@@ -130,7 +135,7 @@
               </div>
             </div>
             <div class="tools">
-              <h3 class="text_large" data-aos="zoom-out" data-aos-delay="300">Ferramentas</h3>
+              <h3 class="text_large">Ferramentas</h3>
               <div class="draggable-slider">
                 <div class="area">
                   <div class="slider">
@@ -143,20 +148,20 @@
       </section>
       <section id="services" class="main-section">
         <div class="container content-wrapper -column">
-          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+          <header class="section-header">
             <small class="text_small">Esses são</small>
             <h2 class="text_big">MEUS SERVIÇOS</h2>
           </header>
           <div class="content-wrapper -column">
-            <div class="wide-card" data-aos="fade-left" data-aos-delay="300">
+            <div class="wide-card">
               <img class="icon" src="assets/icons/palette.png">
               <p class="text_medium">Criação de interfaces</p>
             </div>
-            <div class="wide-card" data-aos="fade-left" data-aos-delay="450">
+            <div class="wide-card">
               <img class="icon" src="assets/icons/monitor.png">
               <p class="text_medium">Criação de sites</p>
             </div>
-            <div class="wide-card" data-aos="fade-left" data-aos-delay="600">
+            <div class="wide-card">
               <img class="icon" src="assets/icons/phone.png">
               <p class="text_medium">Responsividade</p>
             </div>
@@ -165,7 +170,7 @@
       </section>
       <section id="projects" class="main-section">
         <div class="container content-wrapper -column">
-          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+          <header class="section-header">
             <small class="text_small">Meus melhores</small>
             <h2 class="text_big">PROJETOS</h2>
           </header>
@@ -175,21 +180,21 @@
       </section>
       <section id="contact" class="main-section">
         <div class="container content-wrapper -column">
-          <header class="section-header" data-aos="zoom-in" data-aos-delay="150">
+          <header class="section-header">
             <small class="text_small">Meios de</small>
             <h2 class="text_big">CONTATO</h2>
           </header>
           <div class="content-content-wrapper column">
             <div class="contact-area">
-              <div class="contact-info" data-aos="fade-left" data-aos-delay="150">
+              <div class="contact-info">
                 <img class="icon" src="assets/icons/email.png">
                 <p class="contact text_small">guihgdias@gmail.com</p>
               </div>
-              <div class="contact-info" data-aos="fade-right" data-aos-delay="300">
+              <div class="contact-info">
                 <img class="icon" src="assets/icons/tellphone.png">
                 <p class="contact text_small">+55 (62) 9 8629-2640</p>
               </div>
-              <div class="contact-info" data-aos="fade-left" data-aos-delay="450">
+              <div class="contact-info">
                 <img class="icon" src="assets/icons/peoples.png">
                 <p class="contact text_small">@guihgdias</p>
               </div>
@@ -204,7 +209,5 @@
     <script src="scripts/list.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
   </body>
 </html>
