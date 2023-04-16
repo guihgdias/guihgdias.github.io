@@ -1,5 +1,6 @@
 .project-card {
-  width: 288px;
+  min-width: 240px;
+  max-width: 240px;
   height: 313px;
   border-radius: 5px;
   background: var(--dark);
@@ -64,4 +65,8 @@
 
 .project-card .content_area .used_tecs .tecs {
   color: var(--light-darkest);
+}
+
+.cards.content-wrapper {
+  flex-wrap: wrap;
 }

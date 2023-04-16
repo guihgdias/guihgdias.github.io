@@ -13,12 +13,42 @@
     transform: translateY(-100%);
   }
 
+  .section-header {
+    margin-bottom: 40px;
+  }
+
   .mobile-menu {
     display: flex;
+  }
+
+  #hero .left,
+  #about .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   #hero .right,
   #about .right {
     display: none;
+  }
+  
+  #about .container > .content-wrapper > .left {
+    margin: 0;
+  }
+
+  #knowledges .text_large {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .draggable-slider .area {
+    height: fit-content;
+  }
+
+  .draggable-slider .area .slider {
+    justify-content: center;
   }
 }
