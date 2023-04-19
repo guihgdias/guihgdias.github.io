@@ -1,5 +1,6 @@
 .change-theme {
   position: relative;
+  display: none;
 }
 
 .change-theme .hover {
